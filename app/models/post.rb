@@ -12,4 +12,8 @@ class Post < ActiveRecord::Base
   def self.all 
     @@all 
   end 
+  
+  def self.clear 
+    @@all = [] 
+  end 
 end
