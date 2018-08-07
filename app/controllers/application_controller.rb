@@ -1,5 +1,5 @@
-
 require_relative '../../config/environment'
+require 'pry'
 
 class ApplicationController < Sinatra::Base
 
@@ -17,6 +17,6 @@ class ApplicationController < Sinatra::Base
   end 
   
   post '/posts' do 
-    
+    binding.pry 
   end 
 end
