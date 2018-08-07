@@ -24,6 +24,8 @@ class ApplicationController < Sinatra::Base
   end 
   
   get '/posts/:id'
+    @post = Post.find(:id)
+    
     
   end 
 end
