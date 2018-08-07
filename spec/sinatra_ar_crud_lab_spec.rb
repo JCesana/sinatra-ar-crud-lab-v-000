@@ -1,4 +1,4 @@
-redirects to '/posts/:id'require 'spec_helper'
+require 'spec_helper'
 require 'pry'
 
 describe "Blog Post App" do
