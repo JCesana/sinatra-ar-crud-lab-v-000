@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     erb :index 
   end 
   
-  get 'posts/:id/edit' do 
+  get '/posts/:id/edit' do 
     "Hello World"
     binding.pry 
   end 
