@@ -6,6 +6,7 @@ describe "Blog Post App" do
   let(:post_content) { "This is my first blog post!!!" }
 
   before do
+    binding.pry 
     @post1 = Post.create(:name => post_name, :content => post_content)
     @post2 = Post.create(:name => "second post", :content => "i'm a really good blogger")
   end
