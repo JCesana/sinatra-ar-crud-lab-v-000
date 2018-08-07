@@ -22,4 +22,8 @@ class ApplicationController < Sinatra::Base
     
     erb :index 
   end 
+  
+  get '/show/:id'
+    
+  end 
 end
