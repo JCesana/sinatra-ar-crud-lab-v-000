@@ -1,3 +1,5 @@
+rake db:migrate SINATRA_ENV=test
+
 require './config/environment'
 
 if ActiveRecord::Migrator.needs_migration?
