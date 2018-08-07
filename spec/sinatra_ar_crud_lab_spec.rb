@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 describe "Blog Post App" do
   let(:post_name) { "Hello World" }
