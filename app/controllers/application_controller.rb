@@ -31,13 +31,11 @@ class ApplicationController < Sinatra::Base
   end 
   
   patch '/posts/:id' do 
-    binding.pry 
     @post = Post.find(params[:id])
-    binding.pry 
     @post.name = params[:name]
     @post.content = params[:content]
-    @post.save  
-    binding.pry
+    @post.save 
+    
     redirect to '/posts/#{@post.id}'
   end 
   
